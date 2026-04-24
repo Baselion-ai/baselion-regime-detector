@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baselion-regime-detector"
+version = "0.1.0"
+description = "Lightweight pip-installable market-regime classifier (LATERAL / STRONG_TREND / VOLATILE) with GMM, HMM, and rule-based methods."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Baselion", email = "opensource@baselion.ai" }]
+maintainers = [{ name = "Paulo Fox" }]
+keywords = ["quantitative-finance", "algorithmic-trading", "baselion", "crypto"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+]
+
+[project.urls]
+Homepage = "https://baselion.ai"
+Documentation = "https://docs.baselion.ai"
+Repository = "https://github.com/Baselion-ai/baselion-regime-detector"
+Issues = "https://github.com/Baselion-ai/baselion-regime-detector/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
